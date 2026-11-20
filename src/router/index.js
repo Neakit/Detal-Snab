@@ -11,7 +11,7 @@ import PartsSearchView from '../views/PartsSearchView.vue'
 import SuccessView from '../views/SuccessView.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   scrollBehavior() { return { top: 0 } },
   routes: [
     { path: '/', component: HomeView, meta: { title: 'Главная' } },
